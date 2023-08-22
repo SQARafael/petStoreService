@@ -5,14 +5,24 @@ package io.petstore.swagger.stepDefinitions;
  */
 
 import io.cucumber.java.en.*;
+import io.petstore.swagger.tasks.pet.PostPetTask;
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.rest.abilities.CallAnApi;
 
 /**
  * @autor Rafael Chica
  * @Fecha: --o--
  */
 public class PostPetStepDef {
+    Actor user= Actor.named("user");
     @When("I consume the endpoint {string} and I send the user information id {string}, nameCategory {string} namePet {string}")
     public void setInfoPet(String endpoint, String id, String nameCategory, String namePet) {
+
+        user.whoCan(CallAnApi.at("https://petstore.swagger.io/v2"));
+
+        user.attemptsTo(
+                PostPetTask.on()
+        );
 
     }
     @Then("I can validate the response service {int}")
