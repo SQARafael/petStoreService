@@ -21,7 +21,7 @@ public class PostPetStepDef {
         user.whoCan(CallAnApi.at("https://petstore.swagger.io/v2"));
 
         user.attemptsTo(
-                PostPetTask.on()
+                PostPetTask.on(endpoint, id, nameCategory, namePet)
         );
 
     }

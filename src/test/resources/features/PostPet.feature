@@ -6,7 +6,7 @@ Feature: Create pet
     Then I can validate the response service <code>
 
     Examples:
-      | id | nameCategory | namePet  | endpoint | code |
-      | 1  | Dog          | doggie  | /pet     | 200  |
+      | id     | nameCategory | namePet | endpoint | code |
+      | 742125 | Dog          | Shibba  | /pet     | 200  |
 
 

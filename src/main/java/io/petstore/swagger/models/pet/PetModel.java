@@ -22,7 +22,7 @@ import java.util.List;
 @NoArgsConstructor
 public class PetModel {
     @JsonProperty("id")
-    public Integer id;
+    public Long id;
 
     @JsonProperty("category")
     public Category category;
