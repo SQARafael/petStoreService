@@ -5,9 +5,13 @@ package io.petstore.swagger.stepDefinitions;
  */
 
 import io.cucumber.java.en.*;
+import io.petstore.swagger.questions.pet.ServerResponse;
 import io.petstore.swagger.tasks.pet.PostPetTask;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.rest.abilities.CallAnApi;
+
+import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
+import static org.hamcrest.Matchers.equalTo;
 
 /**
  * @autor Rafael Chica
@@ -27,6 +31,13 @@ public class PostPetStepDef {
     }
     @Then("I can validate the response service {int}")
     public void iCanValidateTheResponseService(Integer resServer) {
+        user.should(
+                seeThat(
+                        "The response code was: ",
+                        ServerResponse.was(),
+                        equalTo(resServer)
+                )
+        );
 
     }
 }

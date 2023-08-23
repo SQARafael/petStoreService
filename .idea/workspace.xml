@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="92374d59-d2f3-4de4-96dc-3719607d60ea" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/petstore/swagger/models/pet/PetModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/petstore/swagger/models/pet/PetModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/petstore/swagger/tasks/pet/PostPetTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/petstore/swagger/tasks/pet/PostPetTask.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/io/petstore/swagger/stepDefinitions/PostPetStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/petstore/swagger/stepDefinitions/PostPetStepDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/PostPet.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/PostPet.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
