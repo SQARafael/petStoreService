@@ -6,10 +6,15 @@ package io.petstore.swagger.stepDefinitions;
 
 import io.cucumber.java.Before;
 import io.cucumber.java.en.*;
+import io.petstore.swagger.models.pet.Tag;
+import io.petstore.swagger.questions.pet.PutDataResponse;
 import io.petstore.swagger.tasks.pet.PutPetTask;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.rest.abilities.CallAnApi;
 import net.thucydides.core.util.EnvironmentVariables;
+
+import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
+import static org.hamcrest.Matchers.equalTo;
 
 /**
  * @autor Rafael Chica
@@ -33,8 +38,16 @@ public class PutPetStepDef {
                 PutPetTask.on(endpoint, id, nameCategory, namePet)
         );
     }
-    @Then("I can validate the response server {int}")
-    public void iCanValidateTheResponseServer(Integer int1) {
+    @Then("I can validate the response server {string}")
+    public void iCanValidateTheResponseServer(String statusPet) {
+        String x = PutDataResponse.was().answeredBy(user).getTags().get(0).getName();
+        user.should(
+                seeThat(
+                        "The server response was",
+                        res-> PutDataResponse.was().answeredBy(user).getStatus(),
+                        equalTo(statusPet)
+                )
+        );
 
     }
 }

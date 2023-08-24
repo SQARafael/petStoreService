@@ -47,7 +47,7 @@ public class BuildDataPet implements Question<PetModel> {
                 .category(category)
                 .tags(tags)
                 .name(namePet)
-                .status("Happy")
+                .status("available")
                 .build();
         return petModel;
     }

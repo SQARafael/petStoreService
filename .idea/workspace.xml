@@ -7,8 +7,11 @@
     <list default="true" id="92374d59-d2f3-4de4-96dc-3719607d60ea" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/io/petstore/swagger/stepDefinitions/PostPetStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/petstore/swagger/stepDefinitions/PostPetStepDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/petstore/swagger/questions/pet/BuildDataPet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/petstore/swagger/questions/pet/BuildDataPet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/petstore/swagger/runners/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/petstore/swagger/runners/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/petstore/swagger/stepDefinitions/PutPetStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/petstore/swagger/stepDefinitions/PutPetStepDef.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/PostPet.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/PostPet.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/PutPet.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/PutPet.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,5 +106,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/io/petstore/swagger/stepDefinitions/PutPetStepDef.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
