@@ -39,7 +39,7 @@ public class BuildDataPet implements Question<PetModel> {
         tags.add(tag);
 
         PetModel petModel= PetModel.builder()
-                .id(Long.parseLong("0"))
+                .id(Long.parseLong(data.get("ID")))
                 .category(category)
                 .tags(tags)
                 .name(data.get("Mascota"))

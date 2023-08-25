@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="92374d59-d2f3-4de4-96dc-3719607d60ea" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/petstore/swagger/tasks/pet/PutPetTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/petstore/swagger/tasks/pet/PutPetTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/petstore/swagger/questions/pet/BuildDataPet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/petstore/swagger/questions/pet/BuildDataPet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/petstore/swagger/runners/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/petstore/swagger/runners/Runner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,9 +110,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/io/petstore/swagger/stepDefinitions/PutPetStepDef.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/src/test/java/io/petstore/swagger/stepDefinitions/DeletePetStepDef.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
