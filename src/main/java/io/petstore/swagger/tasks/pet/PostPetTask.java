@@ -19,21 +19,17 @@ import static net.serenitybdd.screenplay.Tasks.instrumented;
  */
 public class PostPetTask implements Task {
     private final String endPoint;
-    private final String id;
-    private final String nameCategory;
-    private final String namePet;
 
-    public PostPetTask(String endPoint, String id, String nameCategory, String namePet) {
+
+    public PostPetTask(String endPoint) {
         this.endPoint = endPoint;
-        this.id = id;
-        this.nameCategory = nameCategory;
-        this.namePet = namePet;
+
     }
 
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        PetModel petInfo = actor.asksFor(BuildDataPet.was(id, nameCategory, namePet));
+        PetModel petInfo = actor.asksFor(BuildDataPet.was());
         actor.attemptsTo(
                 Post.to(endPoint).with(
                         requestSpecification -> requestSpecification
@@ -43,8 +39,8 @@ public class PostPetTask implements Task {
         );
     }
 
-    public static PostPetTask on(String endPoint, String id, String nameCategory, String namePet){
+    public static PostPetTask on(String endpoint){
 
-        return instrumented(PostPetTask.class, endPoint,id,nameCategory,namePet);
+        return instrumented(PostPetTask.class,endpoint);
     }
 }

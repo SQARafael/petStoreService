@@ -35,7 +35,7 @@ public class PostPetStepDef {
     @When("I consume the endpoint {string} and I send the user information id {string}, nameCategory {string} namePet {string}")
     public void setInfoPet(String endpoint, String id, String nameCategory, String namePet) {
         user.attemptsTo(
-                PostPetTask.on(endpoint, id, nameCategory, namePet)
+                PostPetTask.on(endpoint)
         );
 
     }

@@ -10,6 +10,7 @@ import io.restassured.http.ContentType;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
+import net.serenitybdd.screenplay.rest.interactions.Delete;
 import net.serenitybdd.screenplay.rest.interactions.Put;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
@@ -20,20 +21,16 @@ import static net.serenitybdd.screenplay.Tasks.instrumented;
  */
 public class PutPetTask implements Task {
     private final String endPoint;
-    private final String id;
-    private final String nameCategory;
-    private final String namePet;
 
-    public PutPetTask(String endPoint, String id, String nameCategory, String namePet) {
+
+    public PutPetTask(String endPoint) {
         this.endPoint = endPoint;
-        this.id = id;
-        this.nameCategory = nameCategory;
-        this.namePet = namePet;
+
     }
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        PetModel petInfo = actor.asksFor(BuildDataPet.was(id, nameCategory, namePet));
+        PetModel petInfo = actor.asksFor(BuildDataPet.was());
 
         actor.attemptsTo(
                 Put.to(endPoint)
@@ -44,9 +41,10 @@ public class PutPetTask implements Task {
                         )
         );
 
+
     }
 
-    public static Performable on(String endPoint, String id, String nameCategory, String namePet){
-        return instrumented(PutPetTask.class,endPoint,id,nameCategory,namePet);
+    public static Performable on(String endPoint){
+        return instrumented(PutPetTask.class,endPoint);
     }
 }

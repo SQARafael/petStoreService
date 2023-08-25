@@ -35,7 +35,7 @@ public class PutPetStepDef {
     @When("I consume the endpoint {string} and I send the user information id {string}, Category {string} namePet {string}")
     public void iConsumeTheEndpointAndISendTheUserInformationIdCategoryNamePet(String endpoint, String id, String nameCategory, String namePet) {
         user.attemptsTo(
-                PutPetTask.on(endpoint, id, nameCategory, namePet)
+                PutPetTask.on(endpoint)
         );
     }
     @Then("I can validate the response server {string}")
